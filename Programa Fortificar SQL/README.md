@@ -10,10 +10,10 @@ Atualmente, a empresa encontra um desafio muito grande na implementação deste 
 um ambiente que permita que a comunidade ao redor da FORTES enxergue que a empresa está a disposição para ajudá-los e receber apoio para tal. Isto será realizado por meio do desenvolvimento de um banco de dados, junto com o 
 protótipo de um site desenvolvido especialmente para suprir as necessidades da FORTES (desenvolvido na matéria de Experiência e Interface com o Usuário). Abaixo, segue a estrutura dos dados junto com a estrutura do DER:
 
-## Estrutura do DER do Projeto
+# Estrutura do DER do Projeto
 O banco de dados será desenvolvido a partir de um modelo de Diagrama Entidade Relacionamento do modelo lógico, junto com a modelagem em SQL. Para representar todos os envolvidos no projeto, separei-os em 6 entidades:
 
-1- Colaboradores do projeto: envolvidos que ajudam nos projetos por meio de doações, ações voluntárias e participação direta no projeto;
+- **Colaboradores**: envolvidos que ajudam nos projetos por meio de doações, ações voluntárias e participação direta no projeto;
 2- Beneficiários do projeto: as pessoas que serão diretamente beneficiadas pelo projeto;
 3- Instituições do projeto: envolvidos dos projetos selecionados que atendem as ações sociais;
 4- Projetos sociais envolvidos: os projetos apoiados pela fortes que realizarão as ações sociais que buscam ajudar diretamente os envolvidos no projeto;
