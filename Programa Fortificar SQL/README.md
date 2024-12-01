@@ -33,60 +33,69 @@ Por isso, os relacionamentos seriam de:
 - Um Edital poder gerenciar vários Projetos.
 - Cada Projeto deve estar associado a um Edital
 
-## Glossário das chaves
-O código do SQL, junto com a imagem que o representa estarão em um documento separado. Sendo assim, logo aqui abaixo haverá o significado das chaves por conterem abreviações no código original. 
+# Significado das Chaves do Banco de Dados
 
-- Colaboradores:
-  COLAB_ID: identificador único dos colaboradores;
-  COLAB_NOME: nome dos colaboradores;
-  COLAB_RUA: normalização do endereço dos colaboradores, começando pela rua;
-  COLAB_NUMRUA: número da rua;
-  COLAB_BAIRRO: bairro do colaborador;
-  COLAB_CIDADE: cidade do colaborador;
-  COLAB_ESTADO: estado do colaborador;
-  COLAB_PAIS: país de origem do colaborador;
-  COLAB_CODPOSTAL: o código postal;
-  COLAB_TELEFONE: telefone de contato;
-  COLAB_EMAIL: e-mail de contato;
+## **Colaboradores**
+- **COLAB_ID**: Identificador único dos colaboradores.
+- **COLAB_NOME**: Nome dos colaboradores.
+- **COLAB_RUA**: Rua do endereço dos colaboradores.
+- **COLAB_NUMRUA**: Número da rua.
+- **COLAB_BAIRRO**: Bairro do colaborador.
+- **COLAB_CIDADE**: Cidade do colaborador.
+- **COLAB_ESTADO**: Estado do colaborador.
+- **COLAB_PAIS**: País de origem do colaborador.
+- **COLAB_CODPOSTAL**: Código postal do colaborador.
+- **COLAB_TELEFONE**: Telefone de contato.
+- **COLAB_EMAIL**: E-mail de contato.
 
-- Instituição:
-  INST_ID INT: identificador único das instituições;
-    INST_NOME: nome das instituições;
-    INST_RUA: normalização do endereço das instituições, começando pela rua;
-    INST_NUMRUA: número da rua;
-    INST_BAIRRO: bairro da instituição;
-    INST_CIDADE: cidade da instituição;
-    INST_ESTADO: estado da instituição;
-    INST_PAIS: pais de origem da instituição;
-    INST_CODPOSTAL: código postal da instituição;
-    INST_TELEFONE: telefone de contato;
-    INST_EMAIL: e-mail para contato;
+---
 
-- Edital:
-    EDITAL_ID: identificador único de cada edital; 
-    EDITAL_TITULO: título referente ao edital;
-    EDITAL_DATAPUB: data de publicação do edital, ou seja, de abertura;
-    EDITAL_DATAFIM: data do fim do edital, do período de inscrições;
-    EDITAL_DESC: descrição do edital;
+## **Instituição**
+- **INST_ID**: Identificador único das instituições.
+- **INST_NOME**: Nome das instituições.
+- **INST_RUA**: Rua do endereço das instituições.
+- **INST_NUMRUA**: Número da rua.
+- **INST_BAIRRO**: Bairro da instituição.
+- **INST_CIDADE**: Cidade da instituição.
+- **INST_ESTADO**: Estado da instituição.
+- **INST_PAIS**: País de origem da instituição.
+- **INST_CODPOSTAL**: Código postal da instituição.
+- **INST_TELEFONE**: Telefone de contato.
+- **INST_EMAIL**: E-mail para contato.
 
-- Projetos:
-    PROJETO_ID: identificador único de cada projeto; 
-    PROJETO_NOME: nome do projeto;
-    PROJETO_DESC: descrição do projeto;
-    PROJETO_FOCO: enfoque do projeto, em que área ele busca atuar; 
-    PROJETO_INST: FK do relacionamento entre os projetos e as instituições;
-    PROJETO_EDIT: FK do relacionamento entre os projetos e os editais;
+---
 
-- Doações:
-    DOACAO_ID: identificador único de cada doação;
-    DOACAO_DATA: data em que a doação foi realizada;
-    DOACAO_VALOR: valor total da doação; 
-    DOACAO_COLAB: FK do relacionamento entre as doações e os colaboradores; 
-    DOACAO_PROJETO: FK do relacionamento entre as doações e aos projetos envolvidos; 
+## **Edital**
+- **EDITAL_ID**: Identificador único de cada edital.
+- **EDITAL_TITULO**: Título referente ao edital.
+- **EDITAL_DATAPUB**: Data de publicação do edital (abertura).
+- **EDITAL_DATAFIM**: Data do fim do período de inscrições.
+- **EDITAL_DESC**: Descrição do edital.
 
-- Beneficiário: 
-    BENEF_ID: identificador único do beneficiário;
-    BENEF_NOME: Nome completo do beneficiário;
-    BENEF_CPF: CPF do beneficiário;
-    BENEF_TIPOAJUDA: Tipo de ajuda fornecida ao beneficiário;
-    BENEF_PROJETO: FK do relacionamento entre beneficiários e projetos;
+---
+
+## **Projetos**
+- **PROJETO_ID**: Identificador único de cada projeto.
+- **PROJETO_NOME**: Nome do projeto.
+- **PROJETO_DESC**: Descrição do projeto.
+- **PROJETO_FOCO**: Enfoque do projeto (área de atuação).
+- **PROJETO_INST**: FK do relacionamento entre os projetos e as instituições.
+- **PROJETO_EDIT**: FK do relacionamento entre os projetos e os editais.
+
+---
+
+## **Doações**
+- **DOACAO_ID**: Identificador único de cada doação.
+- **DOACAO_DATA**: Data em que a doação foi realizada.
+- **DOACAO_VALOR**: Valor total da doação.
+- **DOACAO_COLAB**: FK do relacionamento entre as doações e os colaboradores.
+- **DOACAO_PROJETO**: FK do relacionamento entre as doações e os projetos.
+
+---
+
+## **Beneficiário**
+- **BENEF_ID**: Identificador único do beneficiário.
+- **BENEF_NOME**: Nome completo do beneficiário.
+- **BENEF_CPF**: CPF do beneficiário.
+- **BENEF_TIPOAJUDA**: Tipo de ajuda fornecida ao beneficiário.
+- **BENEF_PROJETO**: FK do relacionamento entre beneficiários e projetos.
