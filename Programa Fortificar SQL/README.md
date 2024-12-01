@@ -1,6 +1,6 @@
-#Banco de Dados do Projeto Fortificar
+# Banco de Dados do Projeto Fortificar
 
-##Sobre o Projeto 
+## Sobre o Projeto 
 O Projeto Fortificar é uma ação social desenvolvida pela empresa Fortes Engenharia LTDA, que é uma empresa de construção civil industrial que busca atuar com ética, competitividade e qualidade. A empresa acredita que investir
 no desenvolvimento social é uma das formas mais efetivas de transformar o cenário socioeconômico. Por isto, em conjunto com os Objetivos de Desenvolvimento Sustentável da Organização das Nações Unidas - ONU para 2030, bem 
 como de acordo com o Plano de Desenvolvimento cujos valores estão pautados em cinco pilares: Ética, Empatia, Consciência Ambiental, Inovação e Responsabilidade Social, a FORTES busca atuar de forma ativa e concreta no que 
@@ -10,7 +10,7 @@ Atualmente, a empresa encontra um desafio muito grande na implementação deste 
 um ambiente que permita que a comunidade ao redor da FORTES enxergue que a empresa está a disposição para ajudá-los e receber apoio para tal. Isto será realizado por meio do desenvolvimento de um banco de dados, junto com o 
 protótipo de um site desenvolvido especialmente para suprir as necessidades da FORTES (desenvolvido na matéria de Experiência e Interface com o Usuário). Abaixo, segue a estrutura dos dados junto com a estrutura do DER:
 
-##Estrutura do DER do Projeto
+## Estrutura do DER do Projeto
 O banco de dados será desenvolvido a partir de um modelo de Diagrama Entidade Relacionamento do modelo lógico, junto com a modelagem em SQL. Para representar todos os envolvidos no projeto, separei-os em 6 entidades:
 
 1- Colaboradores do projeto: envolvidos que ajudam nos projetos por meio de doações, ações voluntárias e participação direta no projeto;
@@ -20,7 +20,7 @@ O banco de dados será desenvolvido a partir de um modelo de Diagrama Entidade R
 5- Doações realizadas aos projetos: seria a transferência/entrega de bens, serviços ou vantagens (em dinheiro ou de qualquer outra espécie) a outrem de forma gratuita;
 6- Edital para a aprovação dos projetos: a seleção dos projetos Sociais será realizada por meio de um edital de seleção de projetos sociais observando os critérios de seleção descritos no edital de abertura;
 
-##Relação entre as entidades
+## Relação entre as entidades
 O banco de dados foi estruturado pensando em suportar a lógica de doações do Programa Fortificar. A ideia seria rastrear:
 - Quem realizou doações e quanto doou.
 - Quais instituições e projetos foram beneficiados.
@@ -33,7 +33,7 @@ Por isso, os relacionamentos seriam de:
 - Um Edital poder gerenciar vários Projetos.
 - Cada Projeto deve estar associado a um Edital
 
-##Glossário das chaves
+## Glossário das chaves
 O código do SQL, junto com a imagem que o representa estarão em um documento separado. Sendo assim, logo aqui abaixo haverá o significado das chaves por conterem abreviações no código original. 
 
 - Colaboradores:
