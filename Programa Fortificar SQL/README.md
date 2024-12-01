@@ -13,12 +13,12 @@ protótipo de um site desenvolvido especialmente para suprir as necessidades da 
 # Estrutura do DER do Projeto
 O banco de dados será desenvolvido a partir de um modelo de Diagrama Entidade Relacionamento do modelo lógico, junto com a modelagem em SQL. Para representar todos os envolvidos no projeto, separei-os em 6 entidades:
 
-- **Colaboradores**: envolvidos que ajudam nos projetos por meio de doações, ações voluntárias e participação direta no projeto;
-2- Beneficiários do projeto: as pessoas que serão diretamente beneficiadas pelo projeto;
-3- Instituições do projeto: envolvidos dos projetos selecionados que atendem as ações sociais;
-4- Projetos sociais envolvidos: os projetos apoiados pela fortes que realizarão as ações sociais que buscam ajudar diretamente os envolvidos no projeto;
-5- Doações realizadas aos projetos: seria a transferência/entrega de bens, serviços ou vantagens (em dinheiro ou de qualquer outra espécie) a outrem de forma gratuita;
-6- Edital para a aprovação dos projetos: a seleção dos projetos Sociais será realizada por meio de um edital de seleção de projetos sociais observando os critérios de seleção descritos no edital de abertura;
+- **Colaboradores do projeto**: envolvidos que ajudam nos projetos por meio de doações, ações voluntárias e participação direta no projeto;
+- **Beneficiários do projeto**: as pessoas que serão diretamente beneficiadas pelo projeto;
+- **Instituições do projeto**: envolvidos dos projetos selecionados que atendem as ações sociais;
+- **Projetos sociais envolvidos**: os projetos apoiados pela fortes que realizarão as ações sociais que buscam ajudar diretamente os envolvidos no projeto;
+- **Doações realizadas aos projetos**: seria a transferência/entrega de bens, serviços ou vantagens (em dinheiro ou de qualquer outra espécie) a outrem de forma gratuita;
+- **Edital para a aprovação dos projetos**: a seleção dos projetos Sociais será realizada por meio de um edital de seleção de projetos sociais observando os critérios de seleção descritos no edital de abertura;
 
 ## Relação entre as entidades
 O banco de dados foi estruturado pensando em suportar a lógica de doações do Programa Fortificar. A ideia seria rastrear:
